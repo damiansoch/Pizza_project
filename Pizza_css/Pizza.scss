@@ -1,0 +1,127 @@
+h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 2px black;
+}
+//-------------------button
+#btnOrder {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(81, 81, 80) 100%);
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 6px 0px 0px rgb(4, 4, 4), 0px 5px 12px 0px rgba(0, 0, 0, 0.6),
+    inset 0px 0px 10px -5px rgba(0, 0, 0, 1);
+  transition: all 100ms linear;
+  user-select: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-top: 10px;
+
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+#btnOrder:active {
+  top: 4px;
+  box-shadow: 0px 2px 0px 0px rgb(190, 190, 190),
+    0px 5px 5px 0px rgba(0, 0, 0, 0.6), inset 0px 0px 10px -5px rgba(0, 0, 0, 1);
+}
+//--------------------------
+input[name="Size"],
+input[name="Topping"] {
+  accent-color: black;
+}
+#menuBG {
+  width: 600px;
+  min-height: 670px;
+  margin: 10px auto;
+  color: white;
+  font-family: "Lobster", cursive;
+  position: relative;
+  overflow: hidden;
+}
+#img {
+  position: absolute;
+  z-index: -1;
+  filter: grayscale(60%) blur(1.4px) brightness(50%);
+}
+#frmMenu {
+  margin-top: 5px;
+  width: 600px;
+  height: 200px;
+  text-shadow: 2px 2px 2px black;
+}
+#totalPrice {
+  width: 200px;
+  height: 190px;
+  margin: 0 auto;
+  float: right;
+  letter-spacing: 2px;
+}
+.left {
+  width: 200px;
+  height: 200px;
+  float: left;
+  letter-spacing: 1px;
+}
+.middle {
+  width: 200px;
+  height: 200px;
+  float: left;
+  letter-spacing: 1px;
+}
+.right {
+  width: 200px;
+  height: 200px;
+  float: right;
+  letter-spacing: 2px;
+}
+#showText {
+  text-align: center;
+  width: 200px;
+  height: 190px;
+  margin: 0px auto;
+  float: left;
+  letter-spacing: 2px;
+}
+.textStyle {
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+.size,
+.toppings {
+  margin-left: 30px;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+.size {
+  margin-top: 10.5px;
+}
+#cart {
+  margin: 0px auto;
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.center {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  left: 60%;
+  text-shadow: 2px 2px 0px #ffffff, 2px 2px 4px #ffffff, 2px 2px 6px #ffffff,
+    4px 4px 2px #ffffff;
+  //
+}
+.total {
+  font-size: 3rem;
+}
+.select {
+  margin-top: 80px;
+  font-size: 2rem;
+}

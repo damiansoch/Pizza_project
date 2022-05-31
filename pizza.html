@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Pizza_css/Pizza.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./IMG/pic.png" />
+    <script src="./Pizza_Javascript/Pizza.js" defer></script>
+    <title>Pizza drill demo</title>
+  </head>
+  <body>
+    <div id="menuBG">
+      <img src="./IMG/pizza.jpg" alt="" height="100%" id="img" />
+      <h1 style="margin: 5px 0px 0 20px">Pizza Drill Tutorial</h1>
+      <button
+        id="btnOrder"
+        type="button"
+        onclick="getReceipt()"
+        value="Place Order"
+      >
+        Order
+      </button>
+      <form action="" id="frmMenu">
+        <!-- ---------------------------------- -->
+
+        <div class="menu left">
+          <h3 class="textStyle">Size:</h3>
+          <input
+            id="Small"
+            type="radio"
+            class="size"
+            name="Size"
+            value="Small pizza"
+          />
+          <label for="Small">Small pizza</label>
+          <br />
+          <input
+            id="Personal"
+            type="radio"
+            class="size"
+            name="Size"
+            value="Personal pizza"
+          />
+          <label for="Personal">Personal pizza</label>
+          <br />
+          <input
+            id="Medium"
+            type="radio"
+            class="size"
+            name="Size"
+            value="Medium pizza"
+          />
+          <label for="Medium">Medium pizza</label>
+          <br />
+          <input
+            id="Large"
+            type="radio"
+            class="size"
+            name="Size"
+            value="Large pizza"
+          />
+          <label for="Large">Large pizza</label>
+          <br />
+          <input
+            id="Extra"
+            type="radio"
+            class="size"
+            name="Size"
+            value="Extra large pizza"
+          />
+          <label for="Extra">Extra large pizza</label>
+          <br />
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="menu middle">
+          <h3 class="textStyle">Vegetables:</h3>
+          <input
+            id="Mushrooms"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Mushrooms"
+          />
+          <label for="Mushrooms">Mushrooms</label>
+          <br />
+          <input
+            id="Onions"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Onions"
+          />
+          <label for="Onions">Onions</label>
+          <br />
+          <input
+            id="Tomatoes"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Tomatoes"
+          />
+          <label for="Tomatoes">Tomatoes</label>
+          <br />
+          <input
+            id="olives"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Ground Beef"
+          />
+          <label for="olives">Olives</label>
+          <br />
+          <input
+            id="Peppers"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Peppers"
+          />
+          <label for="Peppers">Peppers</label>
+          <br />
+          <input
+            id="Cucumber"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Cucumber"
+          />
+          <label for="Cucumber">Cucumber</label>
+          <br />
+          <input
+            id="Sweetcorn"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Sweetcorn"
+          />
+          <label for="Sweetcorn">Sweetcorn</label>
+          <br />
+        </div>
+        <!-- ------------------------------------------------- -->
+        <div class="menu right">
+          <h3 class="textStyle">Meats:</h3>
+          <input
+            id="Peperoni"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Pepperoni"
+          />
+          <label for="Peperoni">Peperoni</label>
+          <br />
+          <input
+            id="Sasauge"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Sausage"
+          />
+          <label for="Sasauge">Sasauge</label>
+          <br />
+          <input
+            id="Canadian"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Canadian Becon"
+          />
+          <label for="Canadian">Canadian becon</label>
+          <br />
+          <input
+            id="Beef"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Ground Beef"
+          />
+          <label for="Beef">Ground beef</label>
+          <br />
+          <input
+            id="Anchovy"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Anchovy"
+          />
+          <label for="Anchovy">Anchovy</label>
+          <br />
+          <input
+            id="Chicken"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Chicken"
+          />
+          <label for="Chicken">Chicken</label>
+          <br />
+          <input
+            id="Tuna"
+            type="checkbox"
+            name="Topping"
+            class="toppings"
+            value="Tuna"
+          />
+          <label for="Tuna">Tuna</label>
+          <br />
+        </div>
+        <!-- ------------------------------------------------- -->
+      </form>
+      <div id="cart">
+        <div id="showText"></div>
+        <div id="totalPrice"></div>
+      </div>
+    </div>
+  </body>
+</html>
